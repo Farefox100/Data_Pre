@@ -1,0 +1,11 @@
+Package: DataPre
+Type: Package
+Title: Pré tratamento de dados
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: Dennis Da Silva Ferreira <dennis-ferreira10@hotmail.com>
+Description: É uma rotina que pré trata os dado com autoescalamento e centrar na média
+    Rotina para tratar dados quimiometricos
+License: Open Source
+Encoding: UTF-8
+LazyData: true

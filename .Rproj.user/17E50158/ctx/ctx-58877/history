@@ -1,0 +1,283 @@
+library(readxl)
+exemplo1_discreto <- read_excel("C:/Users/leoca/Dropbox/seg/Dennis/Tutorial/playlist/exemplo1_discreto.xlsx",
+range = "D2:M59")
+View(exemplo1_discreto)
+View(exemplo1_discreto)
+library(readxl)
+dados <- read_excel("C:/Users/leoca/OneDrive/Área de Trabalho/dados.xlsx",
+range = "B1:G12")
+View(dados)
+X<-t(Dados)
+X<-t(dados)
+clc
+View(X)
+View(X)
+center_median <- function(X){
+m<- nrow(X)
+xm<- colMeans(X)
+A<-matrix(1,nrow = m,ncol = 1)*xm
+Xcm=X-A
+}
+center_median(X)
+m<- nrow(X)
+View(X)
+xm<- colMeans(X)
+A<-matrix(1,nrow = m,ncol = 1)*xm
+A<-matrix(1,nrow = m,ncol = 1)%*%xm
+View(A)
+View(A)
+Xcm=X-A
+dp<- sqrt(colSums(X-xm)^2/(m-1))
+auto_scale <- function(X){
+m<- nrow(X)
+xm<- colMeans(X)
+dp<- sqrt(colSums(X-xm)^2/(m-1))
+A<-matrix(1,nrow = m,ncol = 1)%*%xm
+B<-matrix(1,nrow = m,ncol = 1)%*%dp
+Xauto<-(X-A)/B
+}
+Xauto<-auto_scale(X)
+View(Xauto)
+dp<- X-xm
+View(dp)
+View(dp)
+dp<- (X-xm)^2
+dp<- (X-xm)
+dp<- (X-A)
+View(dp)
+dp<- (X-A)^2
+dp<- srqt(colSums((X-A)^2)/(m-1))
+dp<- srqt(colSums((X-A)^2)/(m-1))
+dp<- sqrt(colSums((X-A)^2)/(m-1))
+B<-matrix(1,nrow = m,ncol = 1)%*%dp
+Xauto<-(X-A)/B
+View(Xauto)
+View(Xauto)
+library(DataPre)
+library(readxl)
+exemplo1_discreto <- read_excel("C:/Users/leoca/Dropbox/seg/Dennis/Tutorial/playlist/exemplo1_discreto.xlsx",
+range = "D2:M59")
+View(exemplo1_discreto)
+library(DataPre)
+library(FactoMineR) # para calcular a PCA
+library(factoextra) # Pacote para plotar
+Xauto<-auto_scale(exemplo1_discreto)
+Xauto<-auto_scale(exemplo1_discreto)
+# Calcular a PCA
+pca_res <- prcomp("Dado tratado") # calculando PCA
+# Calcular a PCA
+pca_res <- prcomp(Xauto) # calculando PCA
+loadings <- pca_res$rotation # loadigns
+scores <- pca_res$x # Socres
+variancia_exp <- matrix((pca_res$sdev)^2*100/sum(pca_res$sdev^2)) # variancia explicada
+fviz_pca_ind(pca_res) # grafico de scores
+fviz_pca_var(pca_res) # grafico de loadings
+#grafico variacia explicada
+plot(variancia_exp,main="Variância explicada",xlab="Componente Principal (PC)",ylab="Variância Explicada (%)")
+fviz_pca_var(pca_res) # grafico de loadings
+View(scores)
+View(scores)
+library(readxl)
+exemplo2_LIBS <- read_excel("C:/Users/leoca/Dropbox/seg/Dennis/Tutorial/playlist/exemplo2_LIBS.xls")
+View(exemplo2_LIBS)
+library(readxl)
+exemplo2_LIBS <- read_excel("C:/Users/leoca/Dropbox/seg/Dennis/Tutorial/playlist/exemplo2_LIBS.xls",
+range = "B1:BF12289")
+View(exemplo2_LIBS)
+# Se for variáveis continuas (espectro emissão, energia, massa, Raios-X)
+Xcm <- center_median(exemplo2_LIBS) # <- X vai ser sua matriz principal
+# Calcular a PCA
+pca_res <- prcomp(Xcm) # calculando PCA
+fviz_pca_ind(pca_res) # grafico de scores
+# Calcular a PCA
+pca_res <- prcomp(t(Xcm) # calculando PCA
+)
+fviz_pca_ind(pca_res) # grafico de scores
+install.packages("xlsx")
+library("xlsx")
+library("xlsx")
+R.version
+library("xlsx")
+quit
+exit
+library("xlsx")
+install.packages("openxlsx")
+libary(openxlsx)
+library(openxlsx)
+write.xlsx(pca_res,PCA)
+excel_out <-'PCA.xlsx'
+write.xlsx(pca_res,excel_out)
+setwd()
+setwd(C:\Users\leoca\OneDrive\Área de Trabalho)
+setwd('C:\Users\leoca\OneDrive\Área de Trabalho')
+setwd('C:/Users/leoca/OneDrive/Área de Trabalho')
+excel_out <-'PCA.xlsx'
+write.xlsx(pca_res,excel_out)
+library(readxl)
+exemplo1_discreto <- read_excel("C:/Users/leoca/Dropbox/seg/Dennis/Tutorial/playlist/exemplo1_discreto.xlsx",
+range = "D2:M59")
+View(exemplo1_discreto)
+X<- exemplo1_discreto
+# Pre tratar os dados:
+# se for variáveis discretas (concentrações, área, altura) -> Auto escalar
+X<-Xauto<- auto_scale(X) # <- X vai ser sua matriz principal
+#carregar as bibliotecas
+library(DataPre)
+#carregar as bibliotecas
+library(DataPre)
+quit
+setwd
+setwd(C:/Users/OneDrive/Documentos/DataPre)
+setwd('C:/Users/OneDrive/Documentos/DataPre')
+setwd('C:/Users/OneDrive/Documentos')
+setwd('C:/Users/leoca/OneDrive/Documentos')
+setwd('C:/Users/leoca/OneDrive/Documentos/DataPre')
+#carregar as bibliotecas
+library(DataPre)
+setwd('C:/Users/leoca/AppData/Local/R/win-library/4.')
+setwd('C:/Users/leoca/AppData/Local/R/win-library')
+setwd('C:/Users/leoca/AppData/Local/R/win-library/4.2')
+library(DataPre)
+library(readxl)
+exemplo1_discreto <- read_excel("C:/Users/leoca/Dropbox/seg/Dennis/Tutorial/playlist/exemplo1_discreto.xlsx",
+range = "D2:M59")
+View(exemplo1_discreto)
+library(DataPre)
+library(FactoMineR) # para calcular a PCA
+library(factoextra) # Pacote para plotar
+# Funções para pré tratamento de dados para PCA
+#' @param X matriz de entrada
+#' @export
+# Auto escalamento dos dados
+auto_scale <- function(X){
+m<- nrow(X)
+xm<- colMeans(X)
+A<-matrix(1,nrow = m,ncol = 1)%*%xm
+dp<- sqrt(colSums((X-A)^2)/(m-1))
+B<-matrix(1,nrow = m,ncol = 1)%*%dp
+Xauto<-(X-A)/B
+}
+# Centrando na média os dados
+center_median <- function(X){
+m<- nrow(X)
+xm<- colMeans(X)
+A<-matrix(1,nrow = m,ncol = 1)%*%xm
+Xcm<-X-A
+}
+X<- exemplo1_discreto
+# Pre tratar os dados:
+# se for variáveis discretas (concentrações, área, altura) -> Auto escalar
+X<-Xauto<- auto_scale(X) # <- X vai ser sua matriz principal
+pca_res <- prcomp(Xcm) # calculando PCA
+# Calcular a PCA))
+pca_res <- prcomp(Xauto) # calculando PCA
+# Substiuitor pelo dados tratado por Xauto ou Xcm dependendo da
+# caracteristica do seus dados.
+# Calculando a PCA
+pca_res <- prcomp(X) # calculando PCA
+loadings <- pca_res$rotation # loadigns
+scores <- pca_res$x # Socres
+variancia_exp <- matrix((pca_res$sdev)^2*100/sum(pca_res$sdev^2)) # variancia explicada
+# plot grafico
+fviz_pca_ind(pca_res) # grafico de scores
+fviz_pca_var(pca_res) # grafico de loadings
+#grafico variacia explicada
+plot(variancia_exp,main="Variância explicada",xlab="Componente Principal (PC)",ylab="Variância Explicada (%)")
+loadings <- pca_res$rotation # loadigns
+loadings <- pca_res$rotation # loadigns
+fviz_pca_var(pca_res) # grafico de loadings
+setwd('C:/Users/leoca/OneDrive/Área de Trabalho')
+excel_out <-'PCA.xlsx'
+write.xlsx(pca_res,excel_out)
+library(openxlsx) # pacote para exporta excel
+write.xlsx(pca_res,excel_out)
+excel_out <-'score.xlsx'
+write.xlsx(scores,excel_out)
+View(scores)
+write.xlsx(scores,excel_out)
+write.xlsx(scores,excel_out)
+lista<-list(scores)
+View(lista)
+write.xlsx(lista,excel_out)
+scores_out <-'score.xlsx'
+loadings_out <-'loadings.xlsx'
+lista_scores<-list(scores)
+lista_loadings<list(loadings)
+lista_loadings
+scores_out <-'score.xlsx'
+loadings_out <-'loadings.xlsx'
+lista_scores<-list(scores)
+lista_loadings<-list(loadings)
+write.xlsx(lista_scores,excel_out)
+write.xlsx(lista_loadings,excel_out)
+setwd('C:/Users/leoca/OneDrive/Área de Trabalho')
+scores_out <-'score.xlsx'
+loadings_out <-'loadings.xlsx'
+lista_scores<-list(scores)
+lista_loadings<-list(loadings)
+write.xlsx(lista_scores,scores_out)
+write.xlsx(lista_loadings,loadings_out)
+library(readxl)
+exemplo1_discreto <- read_excel("C:/Users/leoca/Dropbox/seg/Dennis/Tutorial/playlist/exemplo1_discreto.xlsx",
+range = "D2:M59")
+View(exemplo1_discreto)
+#carregar as bibliotecas
+library(DataPre)
+library(DataPre)
+#carregar as bibliotecas
+library(DataPre)
+library(FactoMineR) # para calcular a PCA
+library(factoextra) # Pacote para plotar
+library(openxlsx) # pacote para exporta excel
+x<- exemplo1_discreto
+X<-Xauto<- auto_scale(X) # <- X vai ser sua matriz principal
+X<- exemplo1_discreto
+X<-0
+X<- NULL
+X<-Xauto<- auto_scale(X) # <- X vai ser sua matriz principal
+X<- exemplo1_discreto
+x<- 0
+X<-Xauto<- auto_scale(X) # <- X vai ser sua matriz principal
+pca_res <- prcomp(Xauto) # calculando PCA
+loadings <- pca_res$rotation # loadigns
+scores <- pca_res$x # Socres
+variancia_exp <- matrix((pca_res$sdev)^2*100/sum(pca_res$sdev^2)) # variancia explicada
+plot grafico
+# plot grafico
+fviz_pca_ind(pca_res) # grafico de scores
+fviz_pca_var(pca_res) # grafico de loadings
+#grafico variacia explicada
+plot(variancia_exp,main="Variância explicada",xlab="Componente Principal (PC)",ylab="Variância Explicada (%)")
+fviz_pca_var(pca_res) # grafico de loadings
+scores_out <-'score.xlsx'
+loadings_out <-'loadings.xlsx'
+lista_scores<-list(scores)
+lista_loadings<-list(loadings)
+write.xlsx(lista_scores,scores_out)
+write.xlsx(lista_loadings,loadings_out)
+library(readxl)
+exemplo2_LIBS <- read_excel("C:/Users/leoca/Dropbox/seg/Dennis/Tutorial/playlist/exemplo2_LIBS.xls",
+range = "B1:BF12289")
+View(exemplo2_LIBS)
+X<- exemplo2_LIBS
+# Se for variáveis continuas (espectro emissão, energia, massa, Raios-X)
+Xcm <- center_median(X) # <- X vai ser sua matriz principal
+X<-t(X)
+# Se for variáveis continuas (espectro emissão, energia, massa, Raios-X)
+Xcm <- center_median(X) # <- X vai ser sua matriz principal
+pca_res <- prcomp(X) # calculando PCA
+loadings <- pca_res$rotation # loadigns
+scores <- pca_res$x # Socres
+variancia_exp <- matrix((pca_res$sdev)^2*100/sum(pca_res$sdev^2)) # variancia explicada
+scores_out <-'score.xlsx'
+loadings_out <-'loadings.xlsx'
+lista_scores<-list(scores)
+lista_loadings<-list(loadings)
+write.xlsx(lista_scores,scores_out)
+write.xlsx(lista_loadings,loadings_out)
+fviz_pca_ind(pca_res) # grafico de scores
+fviz_pca_ind(pca_res) # grafico de scores
+loadings <- pca_res$rotation # loadigns
+library(DataPre)
+install.packages("devtools")
+install.packages("roxygen2")

@@ -1,0 +1,37 @@
+#instalar algumas bibliotecas
+install.packages(Data_pre) # Pacote pré tratamento
+install.packages(FactoMineR) #Pacote do PCA
+install.packages(factoextra) # Pacote para plotar
+install.packages("openxlsx")
+#carregar as bibliotecas
+library(DataPre)
+library(FactoMineR) # para calcular a PCA
+library(factoextra) # Pacote para plotar
+library(openxlsx) # pacote para exporta excel
+
+# Pre tratar os dados:
+# se for variáveis discretas (concentrações, área, altura) -> Auto escalar
+X<-Xauto<- auto_scale(X) # <- X vai ser sua matriz principal
+# Se for variáveis continuas (espectro emissão, energia, massa, Raios-X)
+Xcm <- center_median(X) # <- X vai ser sua matriz principal
+
+Xcm# Calculando a PCA
+  pca_res <- prcomp(X) # calculando PCA
+  loadings <- pca_res$rotation # loadigns
+  scores <- pca_res$x # Socres
+  variancia_exp <- matrix((pca_res$sdev)^2*100/sum(pca_res$sdev^2)) # variancia explicada
+  # plot grafico
+  fviz_pca_ind(pca_res) # grafico de scores
+  fviz_pca_var(pca_res) # grafico de loadings
+  #grafico variacia explicada
+  plot(variancia_exp,main="Variância explicada",xlab="Componente Principal (PC)",ylab="Variância Explicada (%)")
+
+# exportar os arquivos para excel
+  setwd('Local que vai salvar os arquivos')
+  scores_out <-'score.xlsx'
+  loadings_out <-'loadings.xlsx'
+  lista_scores<-list(scores)
+  lista_loadings<-list(loadings)
+  write.xlsx(lista_scores,scores_out)
+  write.xlsx(lista_loadings,loadings_out)
+
